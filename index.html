@@ -51,17 +51,28 @@ div.transbox {
  .button {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 6px;
   color: white;
   background-color: black;
-  border-width: 4px;
-  border-color: white;
+  border-radius: 0.375rem;
+  border: solid 3px white;
   text-align: center;
   font-size: x-large;
   }
 
   .button:hover {
-  font-size: xx-large;
+  transition: 0.18s;
+  transform: scale(1.1125);
+  }
+
+  .buttons01 {
+  object-position: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  }
+
+  .buttons {
+  object-position: center;
+  display: flex;
   }
 
 </style>
@@ -73,11 +84,20 @@ div.transbox {
   </div>
   <!-- <div class="transbox"> </div> -->
   <div>
+    <center>
+      <ul id="buttons01" class="buttons">
+        <li>
     <form action="aboutme.html">
-      <center><input type="submit" value="About Me" /></center>
+      <input type="submit" class="button" value="About Me" />
     </form>
-    <center><button class="button"><a href="aboutme.html"></a>About Me</button></center>
-    <center><button class="button">My Work</button></center>
+    </li>
+    <li>
+    <form action="mywork.html">
+      <input type="submit" class="button" value="My Work" />
+    </form>
+    </li>
+</ul>
+</center>
   </div>
 
 </body>
