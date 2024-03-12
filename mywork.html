@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Me</title>
+    <title>My Work</title>
     <link rel="icon" href="assets/PrangellPlays.png">
 <style>
 
@@ -22,26 +22,15 @@ div button{
   color: black;
   outline: white;
 }
-    
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: white;
-  font-family: 'Anonymous Pro', monospace;
-  text-align: center;
-}
-    
-div.transbox {
-  border-radius: 25px;
-  margin-top: 2%;
-  margin-left: 80px;
-  margin-right: 80px;
-  background-color: #2f2f2f;
-  border: 1px solid transparent;
+
+body {
+  padding: 25px;
+  background-color: black;
+  font-size: 25px;
 }
 
- body {
-  background-color: #000000;
+.dark-mode {
+  background-color: black;
 }
 
  p {
@@ -51,29 +40,29 @@ div.transbox {
  .button {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 6px;
   color: white;
   background-color: black;
-  border-width: 4px;
-  border-color: white;
+  border-radius: 0.375rem;
+  border: solid 3px white;
   text-align: center;
   font-size: x-large;
+  margin-left: 755px;
   }
 
   .button:hover {
-  font-size: xx-large;
+  transition: 0.18s;
+  transform: scale(1.1125);
   }
 
   .buttons01 {
+  object-position: center;
   flex-direction: column;
   flex-wrap: nowrap;
   }
 
   .buttons {
+  object-position: center;
   display: flex;
-  justify-content: var(--flex-alignment);
-  letter-spacing: 0;
-  padding: 0;
   }
 
 </style>
@@ -81,15 +70,25 @@ div.transbox {
 <body>
   <center><img src="assets/PrangellPlays.png" alt="PrangellPlays" style="width:250px;height:250px;" shape="circle"></center>
   <div>
+<center>
+<ul id="buttons01" class="buttons">
+  <li>
+  <form action="index.html">
+    <input type="submit" class="button" value="Back" />
+  </form>
+  </li>
+</ul>
+</center>
   </div>
-  <!-- <div class="transbox"> </div> -->
-  <div>
-    <center>
-        <form action="index.html">
-            <input type="submit" class="button" value="Back" />
-        </form>
-    </center>
-  </div>
+  <!-- <div>
+ <button onclick="myFunction()">Toggle dark mode</button>
+  <script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
+  </div> -->
 
 </body>
 </html>

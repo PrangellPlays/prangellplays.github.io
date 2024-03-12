@@ -22,23 +22,6 @@ div button{
   color: black;
   outline: white;
 }
-    
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: white;
-  font-family: 'Anonymous Pro', monospace;
-  text-align: center;
-}
-    
-div.transbox {
-  border-radius: 25px;
-  margin-top: 2%;
-  margin-left: 80px;
-  margin-right: 80px;
-  background-color: #2f2f2f;
-  border: 1px solid transparent;
-}
 
  body {
   background-color: #000000;
@@ -51,29 +34,29 @@ div.transbox {
  .button {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 6px;
   color: white;
   background-color: black;
-  border-width: 4px;
-  border-color: white;
+  border-radius: 0.375rem;
+  border: solid 3px white;
   text-align: center;
   font-size: x-large;
+  margin-left: 755px;
   }
 
   .button:hover {
-  font-size: xx-large;
+  transition: 0.18s;
+  transform: scale(1.1125);
   }
 
   .buttons01 {
+  object-position: center;
   flex-direction: column;
   flex-wrap: nowrap;
   }
 
   .buttons {
+  object-position: center;
   display: flex;
-  justify-content: var(--flex-alignment);
-  letter-spacing: 0;
-  padding: 0;
   }
 
 </style>
@@ -83,13 +66,16 @@ div.transbox {
   <div>
     <p>Hey im PrangellPlays 👋<br>I am a British game developer and programmer 💻<br>I typically work on the Minecraft side of developing and programming<br>I am currently studying computer science and coding! 📖<br>I love to work on minecraft mods and games as well</p>
   </div>
-  <!-- <div class="transbox"> </div> -->
   <div>
-    <center>
-    <form action="index.html">
-        <input type="submit" class="button" value="Back" />
-    </form>
-    </center>
+<center>
+<ul id="buttons01" class="buttons">
+  <li>
+  <form action="index.html">
+    <input type="submit" class="button" value="Back" />
+  </form>
+  </li>
+</ul>
+</center>
   </div>
 
 </body>
