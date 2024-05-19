@@ -40,7 +40,7 @@ div button{
   border: solid 3px white;
   text-align: center;
   font-size: x-large;
-  margin-left: 755px;
+  margin-left: 50%;
   }
 
   .button:hover {
@@ -49,14 +49,20 @@ div button{
   }
 
   .buttons01 {
-  object-position: center;
+  position: absolute;
   flex-direction: column;
   flex-wrap: nowrap;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   }
 
-  .buttons {
-  object-position: center;
+  .buttons { 
+  position: absolute;
   display: flex;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   }
 
 </style>
