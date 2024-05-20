@@ -3,119 +3,864 @@
 <head>
     <title>PrangellPlays</title>
     <link rel="icon" href="assets/PrangellPlays.png">
-<style>
-
-img {
-  margin-top: 10%;
-  border-radius: 50%;
-  border: 3px solid #fff;
-}
-
-div p{
-  color: white;
-  font-size: larger;
-  font-family: 'Anonymous Pro', monospace;
-  text-align: center;
-}
-
-div button{
-  color: black;
-  outline: white;
-}
-    
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: white;
-  font-family: 'Anonymous Pro', monospace;
-  text-align: center;
-}
-    
-div.transbox {
-  border-radius: 25px;
-  margin-top: 2%;
-  margin-left: 80px;
-  margin-right: 80px;
-  background-color: #2f2f2f;
-  border: 1px solid transparent;
-}
-
- body {
-  background-color: #000000;
-}
-
- p {
-     color: white;
- }
-
- .button1 {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  background-color: black;
-  border-radius: 0.375rem;
-  border: solid 3px white;
-  text-align: center;
-  font-size: x-large;
-  margin-left: 640px;
-  }
-
-  .button1:hover {
-  transition: 0.18s;
-  transform: scale(1.1125);
-  }
-
- .button2 {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  background-color: black;
-  border-radius: 0.375rem;
-  border: solid 3px white;
-  text-align: center;
-  font-size: x-large;
-  margin-left: 20px;
-  }
-
-  .button2:hover {
-  transition: 0.18s;
-  transform: scale(1.1125);
-  }
-
-  .buttons01 {
-  object-position: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  }
-
-  .buttons {
-  object-position: center;
-  display: flex;
-  }
-
-</style>
 </head>
-<body>
-  <center><img src="assets/PrangellPlays.png" alt="PrangellPlays" style="width:250px;height:250px;" shape="circle"></center>
-  <div>
-    <p>Hey im PrangellPlays 👋<br>I am a British game developer and programmer 💻<br>I typically work on the Minecraft side of developing and programming</p>
-  </div>
-  <!-- <div class="transbox"> </div> -->
-  <div>
-<center>
-<ul id="buttons01" class="buttons">
-  <li>
-  <form action="aboutme.html">
-    <input type="submit" class="button1" value="About Me" />
-  </form>
-  </li>
-  <li>
-  <form action="mywork.html">
-    <input type="submit" class="button2" value="My Work" />
-  </form>
-  </li>
-</ul>
-</center>
-  </div>
-</body>
+<style data-emotion="css-global eb4ovv">
+    * {
+      font-family: 'Anonymous Pro', monospace;
+    }
+
+    *,*::after,*::before {
+        box-sizing: border-box;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #FFF;
+        min-height: 100vh;
+        background: #000 url("/assets/PrangellPlays.png") no-repeat;
+        -webkit-transition: color 0.2s ease-out,background-color 0.2s ease-out;
+        transition: color 0.2s ease-out,background-color 0.2s ease-out;
+    }
+
+    main {
+        max-width: 1680px;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    h1,h2,h3,h4,h5,h6,a {
+        font-family: 'Anonymous Pro', monospace;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    a {
+        color: inherit;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+    }
+
+    .brand-slider-container {
+        margin-top: 150px;
+        display: block;
+    }
+
+    @media screen and (min-width: 992px) {
+        .brand-slider-container {
+            display:grid;
+            grid-template-columns: 2fr 5fr;
+            grid-gap: 1px;
+        }
+    }
+
+    .embla {
+        overflow-x: clip;
+        overflow-y: visible;
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 992px) {
+        .embla {
+            padding:initial;
+        }
+    }
+
+    .embla__container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        width: 320px;
+    }
+
+    .embla__slide {
+        position: relative;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        margin-right: 50px;
+        overflow-y: visible;
+        height: 500px;
+    }
+
+    @media screen and (min-width: 992px) {
+        .embla__slide {
+            height:unset;
+        }
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .nav-links {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    @media (max-width: 992px) {
+        .nav-links .nav-toggle {
+            display:-webkit-box!important;
+            display: -webkit-flex!important;
+            display: -ms-flexbox!important;
+            display: flex!important;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+    }
+
+    .nav-links .nav-toggle {
+        position: relative;
+        border-radius: 10px;
+        background: none;
+        border: 2px solid #FFF;
+        color: white;
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 1rem;
+        line-height: 1.2;
+        white-space: nowrap;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        display: none;
+    }
+
+    .nav-links .nav-toggle .cross-container span {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: #FFF;
+        border-radius: 10px;
+        z-index: 1;
+        margin: 0 auto 5px auto;
+        transform-origin: -1px 100%;
+        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),opacity 0.55s ease;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),opacity 0.55s ease;
+    }
+
+    .nav-links .nav-toggle .cross-container span:last-child {
+        margin-bottom: 0;
+    }
+
+    .nav-links .nav-toggle .cross-container.nav-active span:first-of-type {
+        -webkit-transform: rotate(45deg) translate(0px, -5px);
+        -moz-transform: rotate(45deg) translate(0px, -5px);
+        -ms-transform: rotate(45deg) translate(0px, -5px);
+        transform: rotate(45deg) translate(0px, -5px);
+    }
+
+    .nav-links .nav-toggle .cross-container.nav-active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .nav-links .nav-toggle .cross-container.nav-active span:last-of-type {
+        -webkit-transform: rotate(-45deg) translate(3px, 5px);
+        -moz-transform: rotate(-45deg) translate(3px, 5px);
+        -ms-transform: rotate(-45deg) translate(3px, 5px);
+        transform: rotate(-45deg) translate(3px, 5px);
+    }
+</style>
+<style data-emotion="css ojydx0">
+    .css-ojydx0 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        font-weight: bold;
+        position: relative;
+        -webkit-transition: -webkit-transform 5s ease-in-out;
+        transition: transform 5s ease-in-out;
+        z-index: 2;
+        border-radius: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+        .css-ojydx0 .prangellplays-logo {
+            -webkit-transform:translateX(calc(50vw - 50% - 18px));
+            -moz-transform: translateX(calc(50vw - 50% - 18px));
+            -ms-transform: translateX(calc(50vw - 50% - 18px));
+            transform: translateX(calc(50vw - 50% - 18px));
+            border-radius: 50%;
+        }
+    }
+</style>
+            <nav class="css-ojydx0 eta78pq0">
+                <a class="prangellplays-logo" href="/">
+                    <img src="/assets/PrangellPlays.png" alt="PrangellPlays Logo" width="64px" height="64px"/>
+                </a>
+                <div class="nav-links">
+                    <style data-emotion="css psx5wx">
+                        .css-psx5wx {
+                            margin: 0;
+                            padding: 0;
+                            display: none;
+                        }
+
+                        .css-psx5wx li {
+                            list-style: none;
+                            margin: 0 20px;
+                            padding: 0;
+                        }
+
+                        @media screen and (min-width: 992px) {
+                            .css-psx5wx {
+                                position:initial;
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-align-items: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                            }
+                        }
+                    </style>
+                    <ul class="css-psx5wx e11ho3vg0">
+                        <li>
+                            <style data-emotion="css 10o30bj">
+                                .css-10o30bj {
+                                    border-bottom: none;
+                                    padding: 4px;
+                                    -webkit-transition: background-color 50ms linear;
+                                    transition: background-color 50ms linear;
+                                }
+                            </style>
+                            <a href="/aboutme.html" class="css-10o30bj">About Me</a>
+                        </li>
+                        <li>
+                          <style data-emotion="css 10o30bj">
+                              .css-10o30bj {
+                                  border-bottom: none;
+                                  padding: 4px;
+                                  -webkit-transition: background-color 50ms linear;
+                                  transition: background-color 50ms linear;
+                              }
+                          </style>
+                          <a href="/mywork.html" class="css-10o30bj">My Work</a>
+                      </li>
+                    </ul>
+                    <style data-emotion="css fvhze">
+                        .css-fvhze {
+                            visibility: hidden;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            z-index: 2;
+                            padding: 0;
+                            margin: 0;
+                            background: black url("/assets/PrangellPlays.png") repeat center;
+                            width: 100vw;
+                            height: 100vh;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-flex-direction: column;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                        }
+
+                        @media screen and (min-width: 992px) {
+                            .css-fvhze {
+                                display:none;
+                            }
+                        }
+
+                        .css-fvhze li {
+                            list-style: none;
+                            margin: 0;
+                            margin: 10px 0;
+                            padding: 0;
+                            text-align: center;
+                            font-size: 1.5rem;
+                        }
+
+                        .css-fvhze li.links {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                            -webkit-justify-content: space-between;
+                            justify-content: space-between;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                        }
+
+                        .css-fvhze li.links.luminaeclipse-links {
+                            margin: 25px auto;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            max-width: 90%;
+                            overflow-x: auto;
+                        }
+
+                        .css-fvhze li.links.luminaeclipse-links::-webkit-scrollbar {
+                            display: none;
+                        }
+
+                        .css-fvhze li.links.luminaeclipse-links >a {
+                            margin: auto 10px;
+                        }
+
+                        .css-fvhze li.links.social-links {
+                            margin: 25px 0;
+                        }
+
+                        .css-fvhze li.links.social-links >a {
+                            margin: 0 10px;
+                        }
+                    </style>
+                    <ul class="css-fvhze eu7nh9s0">
+                        <li>
+                            <img src="/assets/PrangellPlays.png" alt="PrangellPlays Logo" width="64px" height="64px"/>
+                        </li>
+                        <li>
+                            <style data-emotion="css c1fodj">
+                                .css-c1fodj {
+                                    border-bottom: 3px solid #B45553;
+                                    padding: 4px;
+                                    -webkit-transition: background-color 50ms linear;
+                                    transition: background-color 50ms linear;
+                                }
+                            </style>
+                            <a href="/" class="css-c1fodj">Home</a>
+                        </li>
+                        <li>
+                            <a href="/aboutme.html" class="css-10o30bj">About Me</a>
+                        </li>
+                        <li>
+                          <a href="/mywork.html" class="css-10o30bj">My Work</a>
+                      </li>
+                        <li class="links luminaeclipse-links">
+                            <a href="https://luminaeclipse.github.io/" target="_self" rel="noreferrer">
+                                <style data-emotion="css j0r2dl">
+                                    .css-j0r2dl {
+                                        width: 35px;
+                                        height: auto;
+                                    }
+                                </style>
+                                <img src="/assets/luminaeclipse.png" alt="Lumina Eclipse" class="css-j0r2dl ep5pxra0"/>
+                            </a>
+                            <!-- <a href="runicclash.html" target="_self" rel="noreferrer">
+                                <img src="/assets/runicclash.png" alt="Runic Clash" class="css-j0r2dl ep5pxra0"/>
+                            </a>
+                            <a href="launcher.html" target="_self" rel="noreferrer">
+                                <img src="/client/luminaclient.png" alt="Launcher" class="css-j0r2dl ep5pxra0"/>
+                            </a> -->
+                        </li>
+                        <li></li>
+                        <li class="links social-links">
+                            <style data-emotion="css 7en3fv">
+                                .css-7en3fv {
+                                    display: -webkit-box;
+                                    display: -webkit-flex;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -webkit-box-pack: center;
+                                    -ms-flex-pack: center;
+                                    -webkit-justify-content: center;
+                                    justify-content: center;
+                                    -webkit-align-items: center;
+                                    -webkit-box-align: center;
+                                    -ms-flex-align: center;
+                                    align-items: center;
+                                }
+
+                                .css-7en3fv svg {
+                                    -webkit-transition: color 0.2s ease-in-out;
+                                    transition: color 0.2s ease-in-out;
+                                }
+
+                                .css-7en3fv:hover svg {
+                                    color: #fff;
+                                }
+                            </style>
+                            <a href="https://twitter.com/PrangellPlays" target="_blank" rel="noreferrer">
+                                <img src="/assets/x.png" alt="X" class="css-j0r2dl ep5pxra0"/>
+                            </a>
+                            <a href="https://github.com/PrangellPlays" target="_blank" rel="noreferrer">
+                                <img src="/assets/github.png" alt="github" class="css-j0r2dl ep5pxra0"/>
+                            </a>
+                            <a href="https://www.youtube.com/@PrangellPlays" target="_blank" rel="noreferrer">
+                                <img src="/assets/youtube.png" alt="youtube" class="css-j0r2dl ep5pxra0"/>
+                            </a>
+                            <a href="https://www.twitch.tv/prangellplays" target="_blank" rel="noreferrer">
+                              <img src="/assets/twitch.png" alt="twitch" class="css-j0r2dl ep5pxra0"/>
+                          </a>
+                          <a href="https://discord.gg/KREK6TBwaV" target="_blank" rel="noreferrer">
+                            <img src="/assets/discord.png" alt="discord" class="css-j0r2dl ep5pxra0"/>
+                        </a>
+                        </li>
+                    </ul>
+                    <button class="nav-toggle" aria-label="navigation toggle">
+                        <div class="cross-container nav- ">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+            <main>
+            <div class="css-1bffr5u ei882962">
+                <style data-emotion="css 1yli4qn">
+                    .css-1yli4qn {
+                        background-image: url("/assets/PrangellPlays.png");
+                    }
+                </style>
+                <style data-emotion="css 1v0kze6">
+                    .css-1v0kze6 {
+                        display: none;
+                        -webkit-background-size: cover;
+                        background-size: cover;
+                        -webkit-background-position: center;
+                        background-position: center;
+                        background-image: url("/assets/PrangellPlays.png");
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        .css-1v0kze6 {
+                            display:block;
+                        }
+                    }
+                </style>
+                <div class="css-1v0kze6 ei882960"></div>
+                <style data-emotion="css 1yj3gtg">
+                    .css-1yj3gtg {
+                        display: none;
+                    }
+
+                    @media screen and (min-width: 768px) {
+                        .css-1yj3gtg {
+                            display:-webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                        }
+                    }
+                </style>
+                <div class="css-1yj3gtg ei882961">
+                    <style data-emotion="css e06kss">
+                        .css-e06kss {
+                            transform-origin: center;
+                            top: 400px;
+                            left: initial;
+                        }
+                    </style>
+                    <style data-emotion="css 9zou6d">
+                        .css-9zou6d {
+                            position: absolute;
+                            -webkit-transform: rotate(90deg);
+                            -moz-transform: rotate(90deg);
+                            -ms-transform: rotate(90deg);
+                            transform: rotate(90deg);
+                            z-index: -10;
+                            margin: 0;
+                            padding: 0;
+                            width: -webkit-fit-content;
+                            width: -moz-fit-content;
+                            width: fit-content;
+                            font-family: 'Anonymous Pro', monospace;
+                            font-weight: 700;
+                            font-size: 65px;
+                            color: transparent;
+                            letter-spacing: 10px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            -webkit-text-stroke: 1px #535353;
+                            display: none;
+                            transform-origin: center;
+                            top: 400px;
+                            left: initial;
+                        }
+
+                        @media screen and (min-width: 768px) {
+                            .css-9zou6d {
+                                display:block;
+                            }
+                        }
+                    </style>
+                    <div role="presentation" class="vertical-text-container css-9zou6d e16go3v10">PrangellPlays</div>
+                </div>
+                <section class="intro-section">
+                    <div class="intro-text">
+                        <div style="opacity:0;transform:translateY(-50px) translateZ(0)">
+                            <style data-emotion="css 13fxhno">
+                                .css-13fxhno {
+                                    margin: auto;
+                                    display: -webkit-box;
+                                    display: -webkit-flex;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -webkit-box-pack: center;
+                                    -ms-flex-pack: center;
+                                    -webkit-justify-content: center;
+                                    justify-content: center;
+                                    -webkit-flex-direction: column;
+                                    -ms-flex-direction: column;
+                                    flex-direction: column;
+                                }
+
+                                .css-13fxhno >p {
+                                    color: #B45553;
+                                    font-size: 1rem;
+                                    font-family: 'Anonymous Pro', monospace;
+                                    text-transform: uppercase;
+                                    font-weight: 700;
+                                    letter-spacing: 5px;
+                                    margin: 0s;
+                                    padding: 0;
+                                    margin-bottom: 0;
+                                }
+
+                                @media screen and (min-width: 576px) {
+                                    .css-13fxhno >p {
+                                        font-size:1rem;
+                                    }
+                                }
+
+                                .css-13fxhno >h1 {
+                                    font-size: 2rem;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+
+                                @media screen and (min-width: 576px) {
+                                    .css-13fxhno >h1 {
+                                        font-size:3rem;
+                                    }
+                                }
+                            </style>
+                        </div>
+                        <div style="opacity:0;transform:translateY(-50px) translateZ(0)">
+                            <style data-emotion="css 1pwvp2z">
+                                .css-1pwvp2z {
+                                    background-color: #B45553;
+                                    position: relative;
+                                    overflow: hidden;
+                                    height: auto;
+                                }
+                            </style>
+                            <style data-emotion="css mzjl3c animation-h3pkn8">
+                                .css-mzjl3c {
+                                    position: relative;
+                                    display: block;
+                                    width: -webkit-fit-content;
+                                    width: -moz-fit-content;
+                                    width: fit-content;
+                                    padding: 10px 30px;
+                                    border-radius: 25px;
+                                    cursor: pointer;
+                                    border: none;
+                                    outline: none;
+                                    overflow: hidden;
+                                    -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.47, 0, 0.75, 0.72);
+                                    transition: transform 0.15s cubic-bezier(0.47, 0, 0.75, 0.72);
+                                    background-color: #B45553;
+                                    position: relative;
+                                    overflow: hidden;
+                                    height: auto;
+                                }
+
+                                .css-mzjl3c:before {
+                                    content: "";
+                                    position: absolute;
+                                    display: block;
+                                    top: -20px;
+                                    right: 0;
+                                    width: 75px;
+                                    height: 200%;
+                                    -webkit-transform: translateX(105%) rotate(20deg);
+                                    -moz-transform: translateX(105%) rotate(20deg);
+                                    -ms-transform: translateX(105%) rotate(20deg);
+                                    transform: translateX(105%) rotate(20deg);
+                                    background: #fff;
+                                    opacity: 0.2;
+                                }
+
+                                .css-mzjl3c:focus {
+                                    opacity: 0.9;
+                                }
+
+                                .css-mzjl3c:active {
+                                    opacity: 0.8;
+                                }
+
+                                .css-mzjl3c:hover {
+                                    overflow: hidden;
+                                    -webkit-transform: scale(1.05);
+                                    -moz-transform: scale(1.05);
+                                    -ms-transform: scale(1.05);
+                                    transform: scale(1.05);
+                                }
+
+                                .css-mzjl3c.animate-true:before {
+                                    -webkit-animation: animation-h3pkn8 0.5s 0s both cubic-bezier(0.55, 0.06, 0.68, 0.19);
+                                    animation: animation-h3pkn8 0.5s 0s both cubic-bezier(0.55, 0.06, 0.68, 0.19);
+                                }
+
+                                @-webkit-keyframes animation-h3pkn8 {
+                                    0% {
+                                        -webkit-transform: translateX(105%) rotate(20deg);
+                                        -moz-transform: translateX(105%) rotate(20deg);
+                                        -ms-transform: translateX(105%) rotate(20deg);
+                                        transform: translateX(105%) rotate(20deg);
+                                    }
+
+                                    100% {
+                                        -webkit-transform: translateX(-200px) rotate(20deg);
+                                        -moz-transform: translateX(-200px) rotate(20deg);
+                                        -ms-transform: translateX(-200px) rotate(20deg);
+                                        transform: translateX(-200px) rotate(20deg);
+                                    }
+                                }
+
+                                @keyframes animation-h3pkn8 {
+                                    0% {
+                                        -webkit-transform: translateX(105%) rotate(20deg);
+                                        -moz-transform: translateX(105%) rotate(20deg);
+                                        -ms-transform: translateX(105%) rotate(20deg);
+                                        transform: translateX(105%) rotate(20deg);
+                                    }
+
+                                    100% {
+                                        -webkit-transform: translateX(-200px) rotate(20deg);
+                                        -moz-transform: translateX(-200px) rotate(20deg);
+                                        -ms-transform: translateX(-200px) rotate(20deg);
+                                        transform: translateX(-200px) rotate(20deg);
+                                    }
+                                }
+                            </style>
+                            <a href="/aboutme.html" class="animate-false css-mzjl3c e1w7uy3f1" type="submit">
+                                <style data-emotion="css dxnlg7">
+                                    .css-dxnlg7 {
+                                        color: white;
+                                        font-size: 1.1rem;
+                                        font-family: 'Anonymous Pro', monospace;
+                                        font-weight: 700;
+                                        letter-spacing: 2px;
+                                        background: none;
+                                        outline: none;
+                                        border: none;
+                                    }
+                                </style>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <style data-emotion="css 75kb5y">
+            .css-75kb5y {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                background: #0000009d;
+                margin: 0;
+                padding: 0;
+                display: none;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                z-index: 10;
+            }
+
+            @media screen and (min-width: 768px) {
+                .css-75kb5y {
+                    display:-webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                }
+            }
+
+            .css-75kb5y >ul {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                list-style: none;
+                margin: 0;
+                margin-top: 5px;
+                padding: 20px;
+            }
+
+            .css-75kb5y >ul li.web-link {
+                margin-bottom: 50px;
+            }
+
+            .css-75kb5y >ul li.social-link {
+                margin-bottom: 30px;
+            }
+
+            .css-75kb5y >ul li:last-of-type {
+                margin-bottom: 0;
+            }
+        </style>
+        <div class="css-75kb5y e113553x0">
+            <ul>
+                <style data-emotion="css 1brbpgo">
+                    .css-1brbpgo {
+                        display: inline-block;
+                        background-color: #191919;
+                        padding: 10px 15px;
+                        border-radius: 25px;
+                        font-weight: bold;
+                    }
+
+                    .css-1brbpgo[data-state="hidden"] {
+                        opacity: 0;
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+                </style>
+                <li class="web-link">
+                    <a href="https://luminaeclipse.github.io/" target="_self" rel="noreferrer">
+                        <style data-emotion="css 1q5dolb">
+                            .css-1q5dolb {
+                                width: 45px;
+                                height: auto;
+                            }
+                        </style>
+                        <img src="/assets/luminaeclipse.png" alt="Lumina Eclipse Logo" class="css-1q5dolb ep5pxra0"/>
+                    </a>
+                </li>
+                <!-- <li class="web-link">
+                    <a href="/runicclash.html" target="_self" rel="noreferrer">
+                        <img src="/assets/runicclash.png" alt="Runic Clash Logo" class="css-1q5dolb ep5pxra0"/>
+                    </a>
+                </li>
+                <li class="web-link">
+                    <a href="/launcher.html" target="_self" rel="noreferrer">
+                        <img src="/client/luminaclient.png" alt="Launcher Logo" class="css-1q5dolb ep5pxra0"/>
+                    </a>
+                </li> -->
+            </ul>
+            <ul>
+                <li class="social-link">
+                    <style data-emotion="css 7en3fv">
+                        .css-7en3fv {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            width: 25px;
+                            height: auto;
+                        }
+
+                        .css-7en3fv svg {
+                            -webkit-transition: color 0.2s ease-in-out;
+                            transition: color 0.2s ease-in-out;
+                        }
+
+                        .css-7en3fv:hover svg {
+                            color: #fff;
+                        }
+                    </style>
+                    <a href="https://twitter.com/PrangellPlays" target="_blank" rel="noreferrer">
+                        <img src="/assets/x.png" alt="X" class="css-7en3fv e12bmugy0"/>
+                    </a>
+                </li>
+                </li>
+                <li class="social-link">
+                    <a href="https://github.com/PrangellPlays" target="_blank" rel="noreferrer">
+                        <img src="/assets/github.png" alt="github" class="css-7en3fv e12bmugy0"/>
+                    </a>
+                </li>
+                <li class="social-link">
+                    <a href="https://www.youtube.com/@PrangellPlays" target="_blank" rel="noreferrer">
+                        <img src="/assets/youtube.png" alt="youtube" class="css-7en3fv e12bmugy0"/>
+                    </a>
+                </li>
+                <li class="social-link">
+                  <a href="https://www.twitch.tv/prangellplays" target="_blank" rel="noreferrer">
+                      <img src="/assets/twitch.png" alt="twitch" class="css-7en3fv e12bmugy0"/>
+                  </a>
+              </li>
+              <li class="social-link">
+                <a href="https://discord.gg/KREK6TBwaV" target="_blank" rel="noreferrer">
+                    <img src="/assets/discord.png" alt="discord" class="css-7en3fv e12bmugy0"/>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </div>
 </html>
