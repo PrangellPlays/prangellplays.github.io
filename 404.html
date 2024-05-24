@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-  </style>
+    <title>PrangellPlays: Error404</title>
+    <link rel="icon" href="assets/PrangellPlays.png">
 </head>
-<body>
+  <style>
+    body {
+      background-color: black;
+    }
+    h1 {
+      font-size: x-large;
+      color: red;
+      font-weight: bold;
+    }
+    p {
+      color: white;
+      font-size: medium;
+    }
+    .error-404-01 {
+      position: absolute;
+      top:  50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      object-position: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
 
-    <p>Sorry this web page no longer exsists or never exsisted.
-    </p>
-    <p>
-      If you found this page by mistake, check the URL in your 
-      web browser.
-    </p>
-</body>
+    .error-404 {
+      position: absolute;
+      top:  50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      object-position: center;
+      display: inline;
+    }
+  </style>
+<ul id="error-404-01" class="error-404">
+  <li>
+  <div id="h1">
+    <h1>Sorry this web page no longer exsists or never exsisted.</h1>
+  </div>
+  </li>
+  <li>
+  <div id="p">
+    <p>If you found this page by mistake, check the URL in your web browser.</p>
+  </div>
+  </li>
+</ul>
 </html>
